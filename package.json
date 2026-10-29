@@ -1,0 +1,17 @@
+{
+  "name": "@libertytools/libertyts",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the ER:LC Private Server API v2",
+  "license": "ISC",
+  "repository": { "type": "git", "url": "https://github.com/Liberty-Tools/LibertyTS.git" },
+  "homepage": "https://github.com/Liberty-Tools/LibertyTS#readme",
+  "keywords": ["erlc", "roblox", "discord-bot", "sdk"],
+  "engines": { "node": ">=18" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "scripts": { "build": "tsc -p tsconfig.json", "prepack": "npm run build" },
+  "devDependencies": { "typescript": "^5.7.3", "@types/node": "^18.19.0" }
+}
